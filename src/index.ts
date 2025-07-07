@@ -11,7 +11,7 @@ type Option = {
    * 
    * Enabling legacyTitle allows modifying the title, but this is not GitHub standard.
    */
-  legacyTitle?: boolean;
+  legacyTitle?: true;
   /**
    * The tag name of the alert container. default is `div`.
    * or you can use `blockquote` for semantic HTML.
