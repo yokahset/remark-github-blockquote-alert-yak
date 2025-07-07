@@ -1,4 +1,3 @@
-
 @media (prefers-color-scheme: dark) {
   .markdown-alert {
     --color-border-default: #30363d;
@@ -12,6 +11,14 @@
     --color-done-emphasis: #8957e5;
     --color-success-fg: #3fb950;
     --color-success-emphasis: #238636;
+
+    /* Custom callouts */
+    --color-question-fg: #f276cf;
+    --color-question-emphasis: #fe36fe;
+    --color-yakton-fg: #3ec3d5;
+    --color-yakton-emphasis: #1ba8bb;
+    --color-yakash-fg: #f5b342;
+    --color-yakash-emphasis: #d19014;
   }
 }
 
@@ -28,6 +35,14 @@
     --color-done-emphasis: #8250df;
     --color-success-fg: #1a7f37;
     --color-success-emphasis: #1f883d;
+
+    /* Custom callouts */
+    --color-question-fg: #f276cf;
+    --color-question-emphasis: #fe36fe;
+    --color-yakton-fg: #2aacc1;
+    --color-yakton-emphasis: #1b8c9b;
+    --color-yakash-fg: #d98c0a;
+    --color-yakash-emphasis: #b36c00;
   }
 }
 
@@ -35,55 +50,80 @@
   border-left: .25em solid var(--borderColor-default, var(--color-border-default));
   color: inherit;
   margin-bottom: 16px;
-  padding: .5rem 1em
+  padding: .5rem 1em;
 }
+
 .markdown-alert>:last-child {
-  margin-bottom: 0!important
+  margin-bottom: 0 !important;
 }
+
 .markdown-alert .markdown-alert-title {
   align-items: center;
   display: flex;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1
+  line-height: 1;
 }
+
 .markdown-alert .markdown-alert-title svg.octicon {
-  margin-right: 8px!important;
-  margin-right: var(--base-size-8,8px)!important;
+  margin-right: 8px !important;
   fill: currentColor;
 }
+
+/* Built-in callouts */
 .markdown-alert.markdown-alert-note {
-  border-left-color: var(--borderColor-accent-emphasis,var(--color-accent-emphasis))
+  border-left-color: var(--borderColor-accent-emphasis, var(--color-accent-emphasis));
 }
 .markdown-alert.markdown-alert-note .markdown-alert-title {
   color: var(--color-accent-fg);
-  color: var(--fgColor-accent,var(--color-accent-fg))
 }
+
 .markdown-alert.markdown-alert-tip {
-  border-left-color: var(--borderColor-success-emphasis,var(--color-success-emphasis))
+  border-left-color: var(--borderColor-success-emphasis, var(--color-success-emphasis));
 }
 .markdown-alert.markdown-alert-tip .markdown-alert-title {
   color: var(--color-success-fg);
-  color: var(--fgColor-success,var(--color-success-fg))
 }
+
 .markdown-alert.markdown-alert-important {
-  border-left-color: var(--borderColor-done-emphasis,var(--color-done-emphasis))
+  border-left-color: var(--borderColor-done-emphasis, var(--color-done-emphasis));
 }
 .markdown-alert.markdown-alert-important .markdown-alert-title {
   color: var(--color-done-fg);
-  color: var(--fgColor-done,var(--color-done-fg))
 }
+
 .markdown-alert.markdown-alert-warning {
-  border-left-color: var(--borderColor-attention-emphasis,var(--color-attention-emphasis))
+  border-left-color: var(--borderColor-attention-emphasis, var(--color-attention-emphasis));
 }
 .markdown-alert.markdown-alert-warning .markdown-alert-title {
   color: var(--color-attention-fg);
-  color: var(--fgColor-attention,var(--color-attention-fg))
 }
+
 .markdown-alert.markdown-alert-caution {
-  border-left-color: var(--borderColor-danger-emphasis,var(--color-danger-emphasis))
+  border-left-color: var(--borderColor-danger-emphasis, var(--color-danger-emphasis));
 }
 .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: var(--color-danger-fg);
-  color: var(--fgColor-danger,var(--color-danger-fg))
+}
+
+/* Custom callouts */
+.markdown-alert.markdown-alert-question {title {
+  border-left-color: var(--color-question-emphasis);
+}
+.markdown-alert.markdown-alert-question .markdown-alert-title {
+  color: var(--color-question-fg);
+}
+
+.markdown-alert.markdown-alert-yakton {
+  border-left-color: var(--color-yakton-emphasis);
+}
+.markdown-alert.markdown-alert-yakton .markdown-alert-title {
+  color: var(--color-yakton-fg);
+}
+
+.markdown-alert.markdown-alert-yakash {
+  border-left-color: var(--color-yakash-emphasis);
+}
+.markdown-alert.markdown-alert-yakash .markdown-alert-
+  color: var(--color-yakash-fg);
 }
